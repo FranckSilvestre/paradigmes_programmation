@@ -14,3 +14,6 @@ class Abeille:
         self.quantitePollenTransportee = quantitePollenTransportee
         self.position = position
 
+    def __str__(self):
+        return "Abeille(" + self.nom + ", quant. max.: " + str(self.quantiteMaxPollenTransportable) + ", quant. transp.: " + str(self.quantitePollenTransportee) + ", " + str(self.position) + ")"
+
