@@ -6,3 +6,9 @@ class Position:
         assert positionOE >= 0, "la position Ouest-Est doit être positive"
         self.positionOE = positionOE
 
+    def __str__(self) -> str:
+        return "Position(NS: " + str(self.positionNS) + ", OE: " + str(self.positionOE) + ")"
+
+
+
+

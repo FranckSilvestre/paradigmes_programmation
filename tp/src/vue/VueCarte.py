@@ -1,7 +1,8 @@
 from model.Position import Position
 from model.Carte import Carte
 
-
+# ici : possibilité de réfléchir à la "struture de donnée "VueCarte" pour optimiser
+# l'affichage
 class VueCarte:
 
     def __init__(self, carte: Carte):
@@ -12,6 +13,7 @@ class VueCarte:
             for j in range(0, self.carte.dimension.positionOE):
                 self.afficheElement(Position(i + 1, j + 1))
             print()
+
 
     def afficheElement(self, position: Position):
         for fleur in self.carte.fleurs:

@@ -11,6 +11,7 @@ class TestPosition(TestCase):
         # Alors on dipsose du nouvel objet et on accede aux positions NS et OS
         self.assertEqual(unePositionCorrecte.positionNS, 10)
         self.assertEqual(unePositionCorrecte.positionOE, 42)
+        print(unePositionCorrecte)
 
     def testCreationPositionCasErreurs(self):
         # quand on cree une position avec un des entiers négatif en parametre
