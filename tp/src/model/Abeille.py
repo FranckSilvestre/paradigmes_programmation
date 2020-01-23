@@ -1,5 +1,6 @@
 from model.Fleur import Fleur
 from model.Position import Position
+from util.Journal import Journal
 
 
 class Abeille:
@@ -18,6 +19,8 @@ class Abeille:
         self.quantiteMaxPollenTransportable = quantiteMaxPollenTransportable
         self.quantitePollenTransportee = quantitePollenTransportee
         self.position = position
+        # Ajout P2.Ex2
+        Journal.journalParDefaut.ecrit("nouvelle abeille: " + str(self))
 
     def __str__(self):
         return "Abeille(" + self.nom + ", quant. max.: " + str(self.quantiteMaxPollenTransportable) + \
@@ -31,3 +34,5 @@ class Abeille:
         quantiteObtenue = min(quantitePollenDemandee, quantitePollenLiberable)
         fleur.liberePollen(quantiteObtenue)
         self.quantitePollenTransportee = self.quantiteMaxPollenTransportable
+        # Ajout P2.Ex2
+        Journal.journalParDefaut.ecrit("fleur butinee: " + str(fleur) + " par: " + str(self))

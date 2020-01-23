@@ -16,6 +16,12 @@ class VueCarte:
 
 
     def afficheElement(self, position: Position):
+        # Ajout P2.Ex2
+        for abeille in self.carte.abeilles:
+            if (position.positionNS == abeille.position.positionNS and
+                    position.positionOE == abeille.position.positionOE):
+                print(abeille.forme, end='')
+                return
         for fleur in self.carte.fleurs:
             if (position.positionNS == fleur.position.positionNS and
                     position.positionOE == fleur.position.positionOE):
