@@ -23,4 +23,7 @@ class Abeille:
         return "Abeille(" + self.nom + ", quant. max.: " + str(self.quantiteMaxPollenTransportable) + \
                ", quant. transp.: " + str(self.quantitePollenTransportee) + ", " + str(self.position) + ")"
 
-
+    def butine(self, fleur: Fleur):
+        quantitePollenDemandee = self.quantiteMaxPollenTransportable - self.quantitePollenTransportee
+        fleur.liberePollen(quantitePollenDemandee)
+        self.quantitePollenTransportee = self.quantiteMaxPollenTransportable
