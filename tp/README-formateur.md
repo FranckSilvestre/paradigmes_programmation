@@ -16,6 +16,8 @@ Cette partie est conçu sur la base de 2 principes :
  avec les objets responsables de la présentation des objets du modèles et des interactions de l'utilisateur (la vue). 
  C'est une bonne pratique (le pattern de conception MVC) pour faciliter la compréhension, les évolutions et la 
  maintenance du programme.
+ - l'indication de typage dans les déclarations de méthodes : ce n'est pas obligatoire en Python (pourquoi on fait du python :-(?),
+ mais c'est indispensable pour clarifier le code, faciliter sa maintenance, etc.
  - les tests : la manière dont ils sont écrits, la manière dont ils sont utilisés avec PyCharm.
     
     - chaque test est découpé en cas de succès et cas d'erreur
@@ -35,3 +37,17 @@ La 3ème phase justement (le share) est l'opportunité de repondre mais aussi de
 stagiaires répondre aux questions qui se poseront.
 
 ### Partie 2 - Des abeilles sur la carte
+
+#### Exercice 1 
+L'objectif ici est de montrer ce que peut apporter une approche guidée par les tests :
+
+- spécification détaillée de classe
+- travail en autonomie
+- feedback automatique
+
+#### Exercice 2
+
+Approche plus traditionnelle, plus libre pour développer l'application
+cliente de l'ensemble du modèle, abeilles comprises :-).
+Les stagiaires les plus chauds pourront essayer d'écrire les tests relatifs à
+la classe Carte qui doit être modifiée. 
