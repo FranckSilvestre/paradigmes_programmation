@@ -7,7 +7,6 @@ from model.Position import Position
 
 class TestAbeille(TestCase):
 
-"""
     def testCreationAbeilleCasSucces(self):
         # quand on cree une abeille avec les paramètres valides
         uneAbeille = Abeille("maya", 50, 20, Position(5,12))
@@ -77,4 +76,4 @@ class TestAbeille(TestCase):
 
         # Alors la tentative de butinage de la fleur par l'abeille lève une erreur
         self.assertRaises(AssertionError, maya.butine, soja)
-"""
+
