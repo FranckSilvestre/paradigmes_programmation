@@ -25,5 +25,7 @@ class Abeille:
 
     def butine(self, fleur: Fleur):
         quantitePollenDemandee = self.quantiteMaxPollenTransportable - self.quantitePollenTransportee
-        fleur.liberePollen(quantitePollenDemandee)
+        quantitePollenLiberable = fleur.quantitePollen
+        quantiteObtenue = min(quantitePollenDemandee, quantitePollenLiberable)
+        fleur.liberePollen(quantiteObtenue)
         self.quantitePollenTransportee = self.quantiteMaxPollenTransportable
