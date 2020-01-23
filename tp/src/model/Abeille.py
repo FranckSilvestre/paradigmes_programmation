@@ -24,6 +24,8 @@ class Abeille:
                ", quant. transp.: " + str(self.quantitePollenTransportee) + ", " + str(self.position) + ")"
 
     def butine(self, fleur: Fleur):
+        assert self.position.positionNS == fleur.position.positionNS and \
+               self.position.positionOE == fleur.position.positionOE
         quantitePollenDemandee = self.quantiteMaxPollenTransportable - self.quantitePollenTransportee
         quantitePollenLiberable = fleur.quantitePollen
         quantiteObtenue = min(quantitePollenDemandee, quantitePollenLiberable)
