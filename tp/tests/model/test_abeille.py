@@ -63,7 +63,7 @@ class TestAbeille(TestCase):
         maya.butine(soja)
 
         #  alors l'abeille pend le max de pollen
-        self.assertEqual(maya.quantitePollenTransportee, maya.quantiteMaxPollenTransportable)
+        self.assertEqual(maya.quantitePollenTransportee, 35)
 
         # car la fleur a liberé toute la quantité de pollen qu'elle pouvait
         self.assertEqual(soja.quantitePollen, 0)

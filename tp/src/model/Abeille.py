@@ -33,6 +33,6 @@ class Abeille:
         quantitePollenLiberable = fleur.quantitePollen
         quantiteObtenue = min(quantitePollenDemandee, quantitePollenLiberable)
         fleur.liberePollen(quantiteObtenue)
-        self.quantitePollenTransportee = self.quantiteMaxPollenTransportable
+        self.quantitePollenTransportee += quantiteObtenue
         # Ajout P2.Ex2
         Journal.journalParDefaut.ecrit("fleur butinee: " + str(fleur) + " par: " + str(self))
